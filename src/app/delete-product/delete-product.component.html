@@ -1,0 +1,30 @@
+<body>
+  <mat-vertical-stepper [linear]="isLinear" #stepper>
+
+    <mat-step>
+      <ng-template matStepLabel>Enter Product Details and Delete</ng-template>
+      <form [formGroup]="fourthFormGroup">
+        <mat-form-field>
+          <input matInput placeholder="Product Name" formControlName="productNameControl" required>
+        </mat-form-field>
+       <!-- <mat-form-field>
+          <input matInput type="date" placeholder="Product Date" formControlName="productDateControl" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Product State" formControlName="productStateControl" required>
+        </mat-form-field>-->
+        <mat-form-field>
+          <input matInput placeholder="Product ID" formControlName="productIdControl" [value]="idAutomatico()" required>
+        </mat-form-field>
+      </form>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button (click)="deleteProduct()">Delete</button>
+        <button mat-button (click)="goToTable()">Cancel</button>
+      </div>
+    </mat-step>
+  </mat-vertical-stepper>
+
+
+
+</body>

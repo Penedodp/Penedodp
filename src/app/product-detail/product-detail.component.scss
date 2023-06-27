@@ -1,0 +1,37 @@
+.mat-card {
+    max-width: 500px;
+    margin: 15px;
+    margin-top: 0;
+    border-radius: 10px; 
+}
+.mat-card img {
+    max-width: 300px;
+    height: 180px;
+    margin-left: 3%;
+}
+.mat-card-header {
+    height: 60%;
+    margin-left: 3%;
+}
+
+.mat-card-title {
+    color: rgb(184, 58, 203);
+}
+
+
+.mat-card-content {
+    margin-left: 3%;
+}
+
+.mat-card-actions button {
+    margin-left: 3.5%;
+    color: cadetblue;
+
+}
+
+#email {
+    text-decoration: underline;
+}
+body{
+    background-color: black;
+}

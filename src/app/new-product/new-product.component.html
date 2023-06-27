@@ -1,0 +1,36 @@
+<body>
+
+<mat-toolbar color="primary">
+<a mat-button routerLink="/">Inicio</a>
+</mat-toolbar>
+<mat-card>
+    <mat-card-title>Add Product</mat-card-title>
+    <mat-card-content>
+        <form (submit)="addNewProduct()">
+            <mat-form-field>
+                <input matInput type="text" name="name" [(ngModel)]="name">
+                <mat-label>Nombre</mat-label>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="number" name="stock" [(ngModel)]="stock">
+                <mat-label>New Stock</mat-label>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="number" name="price" [(ngModel)]="price">
+                <mat-label>Price</mat-label>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="date" name="date_added" [(ngModel)]="date_added">
+                <mat-label>Date added</mat-label>
+            </mat-form-field>
+            <br>
+            <mat-checkbox [(ngModel)]="active" name="active">Active</mat-checkbox>
+            <br>
+            <button type="submit" mat-stroked-button color="primary">Add product</button>
+        </form>
+    </mat-card-content>
+</mat-card>
+</body>

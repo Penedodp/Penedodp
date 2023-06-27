@@ -1,0 +1,23 @@
+<body>
+    
+<form [formGroup]="cardForm" (ngSubmit)="saveCard()">
+    <h1>Agregar tarjeta de crédito:</h1>
+    <div>
+      <label for="cardNumber">Número de tarjeta:</label>
+      <input type="text" id="cardNumber" formControlName="cardNumber" required>
+    </div>
+    <div>
+      <label for="cardHolder">Titular de la tarjeta:</label>
+      <input type="text" id="cardName" formControlName="cardName" required>
+    </div>
+    <div>
+      <label for="cardDate">Fecha de vencimiento:</label>
+      <input type="date" id="cardDate" formControlName="cardDate" required>
+    </div>
+    <div>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" formControlName="cvv" required>
+    </div>
+    <button type="submit" [disabled]="cardForm.invalid">Guardar</button>
+  </form>
+</body>

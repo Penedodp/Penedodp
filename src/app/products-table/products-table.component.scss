@@ -1,0 +1,41 @@
+div{
+    height: 100%;
+}
+.mat-table{
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-right: 1%;
+    margin-left: 1%;
+    height: 100%;
+    width: 98%;
+    padding: 0.5%;
+}
+.mat-paginator{
+    height: 9%;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.mat-header-cell{
+    font-size: 18px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+}
+body{
+    background-color: black;
+}
+#add{
+    
+    font-size: 13px;
+}
+#delete{
+    margin-left: 20px;
+    font-size: 13px;
+}
+#deleteB{
+    color: rgb(52, 43, 43);
+}
+
+
+
